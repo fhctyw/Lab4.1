@@ -11,39 +11,39 @@ using namespace std;
 int main()
 {
 	int k, N;
-	double S;
+	double P;
 	cout << "N = "; cin >> N;
 
-	S = 1;
+	P = 1;
 	k = N;
 	while (k <= 25)
 	{
-		S *= sqrt(1 + (1.*N) / k);
+		P *= sqrt(1 + (1.*N) / k);
 		k++;
 	}
-	cout << S << endl;
+	cout << P << endl;
 	
-	S = 1;
+	P = 1;
 	k = N;
 	do {
-		S *= sqrt(1 + (1. * N) / k);
+		P *= sqrt(1 + (1. * N) / k);
 		k++;
 	} while (k <= 25);
-	cout << S << endl;
+	cout << P << endl;
 	
-	S = 1;
+	P = 1;
 	for (k = N; k <= 25; k++)
 	{
-		S *= sqrt(1 + (1. * N) / k);
+		P *= sqrt(1 + (1. * N) / k);
 	}
-	cout << S << endl;
+	cout << P << endl;
 	
-	S = 1;
+	P = 1;
 	for (k = 25; k >= N; k--)
 	{
-		S *= sqrt(1 + (1. * N) / k);
+		P *= sqrt(1 + (1. * N) / k);
 	}
-	cout << S << endl;
+	cout << P << endl;
 
 	return 0;
 }
